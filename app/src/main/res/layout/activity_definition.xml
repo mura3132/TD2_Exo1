@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".DefinitionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/soundOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_sound" />
+
+            <TextView
+                android:id="@+id/wordTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Application"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/wordImage"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/application" />
+
+        <TextView
+            android:id="@+id/wordDefinition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Recueil contenant des mots, des expressions d'une langue, présentés dans un ordre convenu, et qui donne des définitions, des informations sur eux."
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <VideoView
+            android:id="@+id/wordVideo"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            tools:visibility="invisible" />
+    </LinearLayout>
+
+
+</ScrollView>
